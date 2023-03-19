@@ -4,18 +4,18 @@
   imports = [
     inputs.impermanence.nixosModules.impermanence
     inputs.home-manager.nixosModules.home-manager
-    ./acme.nix
+    # ./acme.nix
     ./auto-upgrade.nix
-    ./docker.nix
+    # ./docker.nix
     ./fish.nix
     ./locale.nix
-    ./tailscale.nix
+    # ./tailscale.nix
     ./nix.nix
     ./openssh.nix
-    ./postgres.nix
+    # ./postgres.nix
     ./sops.nix
     ./ssh-serve-store.nix
-    ./steam-hardware.nix
+    # ./steam-hardware.nix
   ] ++ (builtins.attrValues outputs.nixosModules);
 
   home-manager = {

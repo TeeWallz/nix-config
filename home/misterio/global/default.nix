@@ -35,23 +35,23 @@ in
   };
 
   home = {
-    username = lib.mkDefault "misterio";
+    username = lib.mkDefault "tom";
     homeDirectory = lib.mkDefault "/home/${config.home.username}";
     stateVersion = lib.mkDefault "22.05";
     sessionPath = [ "$HOME/.local/bin" ];
 
-    persistence = {
-      "/persist/home/misterio" = {
-        directories = [
-          "Documents"
-          "Downloads"
-          "Pictures"
-          "Videos"
-          ".local/bin"
-        ];
-        allowOther = true;
-      };
-    };
+    # persistence = {
+    #   "/persist/home/tom" = {
+    #     directories = [
+    #       "Documents"
+    #       "Downloads"
+    #       "Pictures"
+    #       "Videos"
+    #       ".local/bin"
+    #     ];
+    #     allowOther = true;
+    #   };
+    # };
   };
 
   colorscheme = lib.mkDefault colorSchemes.dracula;
